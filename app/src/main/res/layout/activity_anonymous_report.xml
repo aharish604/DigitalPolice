@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AnonymousReport">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:text="Description:"
+
+
+
+
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textMultiLine"
+            android:layout_height="180dp"
+            android:hint="Write a Problem Here..! \n
+Example:Here Some one  Sales a Drugs "
+            android:id="@+id/description"
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:text="Upload Any Proofs If It's There With You! Like Images  "
+            />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:columnCount="2"
+            >
+
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:text="Image:"
+                android:textSize="30dp"
+                />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="Upload Image"
+                android:id="@+id/uplodimage"
+
+
+
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Video:"
+                android:textSize="30dp"
+                />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="Upload Video"
+                android:id="@+id/uplodvideo"
+
+                />
+
+
+
+        </GridLayout>
+
+
+
+
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:text="Share Location" />
+
+        <Button
+
+            android:layout_marginTop="30dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Submit"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/submitanonymousreport"
+
+            android:layout_gravity="center"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

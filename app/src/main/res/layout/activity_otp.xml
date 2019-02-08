@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTP"
+    android:orientation="vertical"
+    >
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/otp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+android:textAlignment="center"
+        android:textSize="30sp"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:hint="__ __ __ __ __ __"
+        android:layout_marginTop="100dp"
+
+
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:text="Submit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+
+        android:onClick="submit"
+
+        />
+
+</LinearLayout>
+
+</ScrollView>

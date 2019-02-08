@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:text="Aadhaar No:"
+
+        android:textSize="20sp"
+
+
+        />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+
+    android:hint="Enter 12 Dig Aadhaar No:"
+android:maxLength="12"
+    android:inputType="number"
+    android:id="@+id/register_aadhaar"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:text="Mobile No:"
+
+        android:textSize="20sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+
+android:maxLength="10"
+        android:inputType="number"
+        android:hint="Enter Mobile No:"
+
+        android:id="@+id/register_mobileno"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:text="Set PIN:"
+
+        android:textSize="20sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:hint="Enter New Pin:"
+
+        android:id="@+id/register_pin"
+        android:maxLength="4"
+        android:inputType="numberPassword"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:text="Conform PIN:"
+
+        android:textSize="20sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Re Enter Pin:"
+android:maxLength="4"
+        android:inputType="numberPassword"
+        android:id="@+id/register_reenterpin"
+        />
+<Button
+    android:layout_marginTop="100dp"
+    android:layout_width="250dp"
+    android:layout_height="50dp"
+    style="@style/Widget.AppCompat.Button.Colored"
+    android:text="Register"
+    android:textStyle="bold"
+    android:layout_gravity="center"
+    android:onClick="register"
+
+    />
+
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Register">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:text="Complainant's Name:"
+
+            android:textSize="20sp"
+
+
+            />
+
+        <EditText
+            android:id="@+id/register_aadhaar"
+            android:layout_width="match_parent"
+
+            android:layout_height="40dp"
+            android:hint="Enter Complainant's Name"
+            android:inputType="number"
+            android:maxLength="12" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:text="Mobile No:"
+
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/register_mobileno"
+            android:layout_width="match_parent"
+
+
+            android:layout_height="40dp"
+            android:hint="Enter Mobile No"
+            android:inputType="number"
+
+            android:maxLength="10" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:text="Adress:"
+
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/register_pin"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="Enter Adress"
+            android:maxLength="100"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:text="Place Of Occurence:"
+
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/register_reenterpin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Place Of Occurence"
+            android:inputType="numberPassword"
+            android:maxLength="4" />
+
+
+            <TextView
+
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+
+                android:text="Date Of Occurence:"
+
+                android:textSize="20sp" />
+
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+
+                android:endYear="2100"
+                android:startYear="1900"
+
+
+                >
+
+
+            </DatePicker>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+android:layout_marginTop="10dp"
+            android:text="Aadhaar,PAN,Passport,VoterID  Acceptable"
+            android:textColor="#2D0BEE"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Upload Id Proof:"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="40dp"
+
+                android:layout_weight="1"
+                android:text="upload" />
+        </LinearLayout>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:text="Next"
+            android:onClick="nextcompsecondscreen"
+            android:textStyle="bold"
+
+
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
